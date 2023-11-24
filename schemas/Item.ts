@@ -23,11 +23,6 @@ export default {
             type: 'date',
         },
         {
-            name: 'location',
-            title: 'Location',
-            type: 'string',
-        },
-        {
             name: 'tags',
             title: 'Tags',
             type: 'array',

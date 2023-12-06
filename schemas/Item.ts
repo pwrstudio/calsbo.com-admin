@@ -18,18 +18,37 @@ export default {
             validation: (Rule: any) => Rule.required(),
         },
         {
-            name: 'date',
-            title: 'Date',
-            type: 'date',
-        },
-        {
-            name: 'tags',
-            title: 'Tags',
+            name: 'what',
+            title: 'What',
             type: 'array',
             of: [{ type: 'string' }],
             options: {
                 layout: 'tags',
             },
+        },
+        {
+            name: 'with',
+            title: 'With',
+            type: 'array',
+            of: [{ type: 'string' }],
+            options: {
+                layout: 'tags',
+            },
+        },
+        {
+            name: 'where',
+            title: 'Where',
+            type: 'string',
+        },
+        {
+            name: 'when',
+            title: 'When',
+            type: 'string',
+        },
+        {
+            name: 'date',
+            title: 'Date (for sorting)',
+            type: 'date',
         },
         {
             name: 'type',

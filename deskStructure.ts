@@ -1,33 +1,32 @@
 import {
     MdArticle,
-    MdMail,
-    MdHome,
-
+    MdTextFields,
+    MdList
 } from "react-icons/md"
 
 export default (S) =>
     S.list()
-        .title("calsbot.com")
+        .title("calsbo.com")
         .items([
             S.listItem()
-                .title("About")
-                .icon(MdHome)
+                .title("Page list")
+                .icon(MdList)
                 .child(
                     S.editor()
-                        .id("about")
-                        .title("About")
-                        .schemaType("about")
-                        .documentId("about")
+                        .id("page-list")
+                        .title("Page list")
+                        .schemaType("page-list")
+                        .documentId("page-list")
                 ),
             S.listItem()
-                .title("Contact")
-                .icon(MdMail)
+                .title("Pages")
+                .icon(MdTextFields)
                 .child(
-                    S.editor()
-                        .id("Contact")
-                        .title("Contact")
-                        .schemaType("contact")
-                        .documentId("contact")
+                    S.documentList()
+                        .title('Pages')
+                        .showIcons(true)
+                        .filter("_type == $type")
+                        .params({ type: "page" })
                 ),
             S.listItem()
                 .title("Items")

@@ -1,6 +1,6 @@
 import ContentEditor from "./ContentEditor"
-import About from "./About"
-import Contact from "./Contact"
+import PageList from "./PageList"
+import Page from "./Page"
 import Item from "./Item"
 
-export const schemaTypes = [ContentEditor, About, Contact, Item]
+export const schemaTypes = [ContentEditor, PageList, Page, Item]

@@ -1,11 +1,11 @@
 import {
-    MdHome,
+    MdTextFields,
 } from "react-icons/md"
 
 export default {
-    name: 'about',
-    title: 'About',
-    icon: MdHome,
+    name: 'page',
+    title: 'Page',
+    icon: MdTextFields,
     type: 'document',
     fields: [
         {

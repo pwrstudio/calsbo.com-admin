@@ -6,7 +6,7 @@ import deskStructure from './deskStructure'
 
 export default defineConfig({
   name: 'default',
-  title: 'calsbot-admin',
+  title: 'calsbo-admin',
 
   projectId: '231kr3k3',
   dataset: 'production',

@@ -1,4 +1,4 @@
-import { FaFilePdf } from 'react-icons/fa';
+import { MdImage, MdPictureInPicture } from 'react-icons/md';
 
 export default {
     title: 'Content editor',
@@ -44,26 +44,41 @@ export default {
                                     }
                                 ]
                             },
-                            // PDF file annotation
-                            {
-                                name: 'pdf',
-                                type: 'object',
-                                title: 'PDF',
-                                icon: FaFilePdf, // Add the icon here
-                                fields: [
-                                    {
-                                        title: 'PDF file',
-                                        name: 'file',
-                                        type: 'file',
-                                        options: {
-                                            accept: '.pdf'
-                                        }
-                                    }
-                                ]
-                            },
+
                         ]
                     },
                 },
+                {
+                    type: 'image',
+                    icon: MdImage,
+                    fields: [
+                        {
+                            title: 'Caption',
+                            name: 'caption',
+                            type: 'text',
+                        },
+                    ]
+                },
+                // {
+
+                //     name: 'embedBlock',
+                //     title: 'Embed code',
+                //     type: 'object',
+                //     icon: MdPictureInPicture,
+                //     fields: [
+                //         {
+                //             name: 'url',
+                //             description: 'Link to Youtube or Vimeo video or soundcloud track',
+                //             type: 'url',
+                //             title: 'URL'
+                //         },
+                //         {
+                //             title: 'Caption',
+                //             name: 'caption',
+                //             type: 'text',
+                //         },
+                //     ],
+                // }
             ]
         }
     ]

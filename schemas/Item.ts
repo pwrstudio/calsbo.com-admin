@@ -65,6 +65,12 @@ export default {
             validation: (Rule: any) => Rule.required(),
         },
         {
+            title: "Featured Image",
+            name: "featuredImage",
+            type: "image",
+            hidden: ({ document }) => document.type !== 'article',
+        },
+        {
             name: 'content',
             title: 'Content',
             type: 'contentEditor',

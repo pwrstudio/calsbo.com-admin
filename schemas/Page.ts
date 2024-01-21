@@ -15,6 +15,11 @@ export default {
             validation: (Rule: any) => Rule.required(),
         },
         {
+            title: "Featured Image",
+            name: "featuredImage",
+            type: "image",
+        },
+        {
             name: 'content',
             title: 'Content',
             type: 'contentEditor',

@@ -9,6 +9,16 @@ export default {
     type: 'document',
     fields: [
         {
+            title: "Featured Image (metadata)",
+            name: "featuredImage",
+            type: "image",
+        },
+        {
+            title: 'Content (metadata)',
+            name: 'content',
+            type: 'contentEditor',
+        },
+        {
             name: 'pages',
             title: 'Pages',
             type: 'array',

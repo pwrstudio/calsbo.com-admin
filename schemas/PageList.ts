@@ -9,6 +9,11 @@ export default {
     type: 'document',
     fields: [
         {
+            title: 'Intro text',
+            name: 'introText',
+            type: 'contentEditor'
+        },
+        {
             title: "Featured Image (metadata)",
             name: "featuredImage",
             type: "image",
